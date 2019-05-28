@@ -96,9 +96,7 @@
               </a>
             </li> -->
             <li>
-              <a
-                href="./penelope-buckley-cv-en.pdf"
-              >
+              <a href="./penelope-buckley-cv-en.pdf">
                 <img
                   src="./images/cv-en.svg"
                   alt="CV in English"
@@ -157,6 +155,8 @@
                 href="https://gael.univ-grenoble-alpes.fr/membres/cedric-clastres"
                 >Cédric Clastres</a
               >.
+              <br />
+              Defended 3 May, 2019
             </sub>
           </p>
           <p class="text">
@@ -255,6 +255,10 @@
           <h3 class="title">
             <a href="#publications" class="anchor">Communications</a>
           </h3>
+          <h4>2019</h4>
+          <ul>
+            <li>May - Grenoble School of Political Science</li>
+          </ul>
           <h4>2018</h4>
           <ul>
             <li>Nov - FAEE Paris (invited speaker)</li>
@@ -306,9 +310,7 @@
       }
       window.onload = () => {
         const contactEmail = document.getElementById('email-contact')
-        contactEmail.classList.remove('hidden')
-        const o =
-          'cmYvc2VwbGEtZWxib25lcmctdmludSR5ZWxrY3ViL2Vwb2xlbmVwOm90bGlhbQ=='
+        const o = 'bW9jL3llbGtjdWJlcG9sZW5lcCRoY3JhZXNlcjpvdGxpYW0='
         const data = contactEmail.setAttribute(
           'href',
           atob(o)
@@ -318,6 +320,7 @@
             .replace(/\//g, '.')
             .replace(/\$/g, '@')
         )
+        contactEmail.classList.remove('hidden')
       }
     </script>
   </body>
