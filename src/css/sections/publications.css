@@ -11,6 +11,12 @@
   font-style: italic;
 }
 
+.publications .authors::after {
+  content: '|';
+  opacity: 0.5;
+  margin: 0.25em;
+}
+
 .publications li .title {
   display: inline;
 }
