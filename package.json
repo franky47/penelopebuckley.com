@@ -18,9 +18,9 @@
     "reset.css": "^2.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^9.5.0",
-    "parcel-bundler": "^1.10.0",
-    "surge": "^0.20.3"
+    "autoprefixer": "^9.7.4",
+    "parcel-bundler": "^1.12.4",
+    "surge": "^0.21.3"
   },
   "browserslist": "> 0.5%, last 2 versions, Firefox ESR"
 }
