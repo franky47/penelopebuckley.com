@@ -1,13 +1,14 @@
 /* Sections */
 
-@import './hero.css';
-@import './about.css';
-@import './thesis.css';
-@import './interests.css';
-@import './education.css';
-@import './publications.css';
-@import './communications.css';
-@import './footer.css';
+@import "./hero.css";
+@import "./about.css";
+@import "./thesis.css";
+@import "./interests.css";
+@import "./education.css";
+@import "./publications.css";
+@import "./current-research.css";
+@import "./communications.css";
+@import "./footer.css";
 
 section h3.title {
   padding: 3rem 0;
@@ -34,7 +35,7 @@ a.anchor:hover {
 }
 a.anchor:hover::before {
   position: absolute;
-  content: '#';
+  content: "#";
   transform: translateX(-125%);
   opacity: 0.25;
 }

@@ -1,31 +1,32 @@
-.publications li {
+.current-research li {
   text-align: left;
 }
 
-.publications li:not(:last-child) {
+.current-research li:not(:last-child) {
   margin-bottom: 3rem;
 }
 
-.publications .authors {
+.current-research .authors {
   display: inline;
+  font-style: italic;
 }
 
-.publications .authors::after {
+.current-research .authors::after {
   content: "|";
   opacity: 0.5;
   margin: 0.25em;
 }
 
-.publications li .title {
+.current-research li .title {
   display: inline;
 }
 
-.publications .details {
+.current-research .details {
   margin-top: 0.5rem;
   color: var(--color-text-75);
 }
 
-.publications .badge {
+.current-research .badge {
   float: right;
   background-color: rgb(255, 237, 203);
   color: rgb(94, 61, 0);
