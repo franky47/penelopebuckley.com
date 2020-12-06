@@ -7,20 +7,19 @@
   "author": "Francois Best <contact@francoisbest.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel ./src/index.html -d ./.dev",
-    "clean": "rm -rf ./build ./.cache",
-    "build": "parcel build ./src/index.html -d ./build",
+    "dev": "parcel ./src/index.html",
+    "clean": "rm -rf ./dist ./.parcel-cache",
+    "build": "parcel build ./src/index.html",
     "rebuild": "yarn clean && yarn build",
-    "deploy": "surge -d https://penelopebuckley.com -p ./build",
     "release": "yarn clean && yarn build && yarn deploy"
   },
   "dependencies": {
     "reset.css": "^2.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "parcel-bundler": "^1.12.4",
-    "surge": "^0.21.3"
+    "autoprefixer": "^10.0.4",
+    "parcel": "^2.0.0-beta.1",
+    "surge": "^0.21.7"
   },
   "browserslist": "> 0.5%, last 2 versions, Firefox ESR"
 }

@@ -1,4 +1,4 @@
 node_modules/
-build/
-.cache/
+.parcel-cache/
 .dev/
+dist/
