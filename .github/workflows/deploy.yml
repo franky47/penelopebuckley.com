@@ -35,11 +35,3 @@ jobs:
           project: ./dist
           login: ${{ secrets.SURGE_LOGIN }}
           token: ${{ secrets.SURGE_TOKEN }}
-      - uses: 8398a7/action-slack@44a35a96508f31f916f99ad5b68f489ae45659a2
-        name: Notify on Slack
-        if: always() # Pick up events even if the job fails or is canceled.
-        with:
-          status: ${{ job.status }}
-          author_name: Deployed to ${{ env.NEXT_PUBLIC_DEPLOYMENT_URL }}
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
