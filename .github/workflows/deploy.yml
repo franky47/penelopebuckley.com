@@ -31,7 +31,7 @@ jobs:
       - uses: dswistowski/surge-sh-action@341bcbd76a97da5e6b55ad92f53c0bf840e04c80
         name: Publish to Surge
         with:
-          domain: ${{ env.DEPLOYMENT_URL }}
+          domain: ${{ secrets.DEPLOYMENT_URL }}
           project: ./dist
           login: ${{ secrets.SURGE_LOGIN }}
           token: ${{ secrets.SURGE_TOKEN }}
